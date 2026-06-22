@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简洁指南 · 熊猫体育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(145deg, #fce9d8 0%, #f7d7c0 40%, #eed6c2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            line-height: 1.7;
+            color: #2e241e;
+        }
+
+        .card {
+            max-width: 780px;
+            width: 100%;
+            background: #fffcf8;
+            border-radius: 32px;
+            padding: 3rem 2.8rem;
+            box-shadow: 0 12px 30px rgba(150, 100, 70, 0.15), 0 4px 10px rgba(0, 0, 0, 0.03);
+            transition: box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 16px 40px rgba(150, 100, 70, 0.20);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 550;
+            letter-spacing: -0.02em;
+            color: #3a2820;
+            margin-bottom: 0.2rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #5a3b2a, #8a5e48);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            color: #7a6456;
+            margin-bottom: 2.2rem;
+            border-left: 4px solid #d5b8a8;
+            padding-left: 1rem;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 1.35rem;
+            font-size: 1.025rem;
+            color: #352b25;
+        }
+
+        .intro-quote {
+            background: #f7efea;
+            padding: 1.2rem 1.6rem;
+            border-radius: 20px;
+            margin: 1.8rem 0 2rem;
+            font-style: normal;
+            border: 1px solid #e6d4ca;
+            box-shadow: inset 0 1px 4px rgba(255, 240, 230, 0.6);
+        }
+
+        .intro-quote strong {
+            color: #7a4e38;
+            font-weight: 550;
+        }
+
+        .highlight-link {
+            background: #f0ded3;
+            padding: 0.15rem 0.5rem;
+            border-radius: 30px;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            color: #4f3427;
+            font-weight: 500;
+            border-bottom: 1px solid #d6bbaa;
+        }
+
+        .highlight-link:hover {
+            background: #dcc4b4;
+            color: #2f1f17;
+        }
+
+        .faq-mini {
+            margin: 2.5rem 0 1.8rem;
+            background: #faf4ef;
+            border-radius: 28px;
+            padding: 1.8rem 1.8rem 1.2rem;
+            border: 1px solid #ece0d6;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #4b3328;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.1rem;
+        }
+
+        .faq-question {
+            font-weight: 550;
+            color: #4d352a;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-answer {
+            color: #4d3c33;
+            padding-left: 0.2rem;
+        }
+
+        .access-note {
+            background: transparent;
+            border: 1px dashed #b29482;
+            border-radius: 30px;
+            padding: 1rem 1.6rem;
+            margin: 2rem 0 0.2rem;
+            text-align: center;
+            font-size: 0.98rem;
+            color: #4b362c;
+        }
+
+        .access-note a {
+            color: #6b4d3b;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #c6aa98;
+            transition: border-color 0.2s;
+        }
+
+        .access-note a:hover {
+            border-bottom-color: #8b6a55;
+        }
+
+        .meta-footer {
+            margin-top: 2.2rem;
+            font-size: 0.85rem;
+            color: #8c766a;
+            text-align: right;
+            border-top: 1px solid #e7d7cd;
+            padding-top: 1.2rem;
+            letter-spacing: 0.02em;
+        }
+
+        @media (max-width: 520px) {
+            .card {
+                padding: 2rem 1.5rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 2.0rem;
+            }
+            .subhead {
+                font-size: 0.95rem;
+                padding-left: 0.8rem;
+            }
+            p {
+                font-size: 0.98rem;
+            }
+            .faq-mini {
+                padding: 1.4rem 1.2rem 1rem;
+            }
+            .access-note {
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>熊猫体育 · 简明指南</h1>
+    <div class="subhead">从轻松起步到安心的访问习惯</div>
+
+    <p>如果你刚接触 <strong>熊猫体育</strong> 这个平台，或者只是想换一种更省心的方式使用它，那么这篇短文或许能帮你理清一些头绪。它不是什么复杂的说明书，更像是一份温和的路线图——带你绕过常见的弯路，也提醒你哪些细节值得留心。</p>
+
+    <div class="intro-quote">
+        <strong>📌 写在前面</strong><br>
+        一个平台好不好用，往往不只看功能多不多，还看它是否顺手、是否让人安心。熊猫体育在内容组织和日常浏览上形成了一套自己的节奏，而我们要做的，就是找到那个最贴合自己的频率。
+    </div>
+
+    <p>很多人在初次接触时，会把精力放在翻找各种入口上。但其实更值得花时间的是——<strong>先确认正确的路径</strong>。网上信息繁杂，直接记住一个可靠的指向比收藏一堆链接更有效。这也是为什么我通常会建议朋友：把注意力放在 <a href="https://portal-pandasports.com" class="highlight-link">熊猫体育</a> 这个名称上，它本身就是最清晰的坐标。</p>
+
+    <p>日常使用中，有两个场景常常被忽略。第一是阅读环境：页面上的内容区块有明确的层次，建议顺着标题自然浏览，而不是跳着点选。第二是个人偏好：平台在布局上留出了不少自定义空间，比如显示密度和主题色调，花几分钟调一调，之后的体验会顺手很多。</p>
+
+    <p>另外，如果你习惯在移动设备上浏览，可以留意一下响应式布局下的卡片分组——信息架构在窄屏上做了重新梳理，常用功能反而比桌面端更集中。</p>
+
+    <!-- 小而美的 FAQ 摘要 -->
+    <div class="faq-mini">
+        <h3>❓ 几句常见疑问</h3>
+        <div class="faq-item">
+            <span class="faq-question">为什么我看到的页面和之前不一样？</span>
+            <span class="faq-answer">平台会不定期优化界面结构，但核心内容分类一般不会大变。刷新或稍后再试即可。</span>
+        </div>
+        <div class="faq-item">
+            <span class="faq-question">有没有必要注册或登录才能浏览？</span>
+            <span class="faq-answer">大部分公开内容无需登录即可阅读。只有特定互动功能可能需要账号，按需选择就好。</span>
+        </div>
+        <div class="faq-item" style="margin-bottom:0;">
+            <span class="faq-question">如何判断我访问的是否为原版？</span>
+            <span class="faq-answer">最简单的方法：确认地址栏域名是 portal-pandasports.com ，并注意页面是否有异常弹窗或重定向。</span>
+        </div>
+    </div>
+
+    <p>最后想分享一个小小的习惯：每过一段时间，可以主动清理一下浏览器的缓存和站点数据。这不仅让页面加载更利落，也能避免一些由于旧版本样式残留导致的小错位。如果你愿意，也可以把 <strong>熊猫体育</strong> 添加到书签栏，这样每次想浏览时，不用再临时搜索。</p>
+
+    <div class="access-note">
+        🌿 当你准备好时，可以直接前往 <a href="https://portal-pandasports.com">熊猫体育</a>，保持自然浏览即可。
+    </div>
+
+    <div class="meta-footer">
+        一份简单的指引 · 愿你用得顺心
+    </div>
+</div>
+</body>
+</html>
