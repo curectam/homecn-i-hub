@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊猫体育 · 简明介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            background: #f4f6f8;
+            color: #1e2a3a;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hero {
+            background: #0b1a2e;
+            color: #eef2f6;
+            padding: 4rem 1.5rem 3.2rem;
+            text-align: center;
+            border-bottom: 4px solid #dbb042;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 680px;
+            margin: 0 auto;
+            color: #bcc9da;
+        }
+
+        .container {
+            max-width: 860px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2.8rem 1.5rem 4rem;
+            flex: 1;
+        }
+
+        .intro-card {
+            background: #ffffff;
+            padding: 2.5rem 2.2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+            margin-bottom: 2.5rem;
+        }
+
+        .intro-card .meta {
+            font-size: 0.85rem;
+            color: #7b8a9b;
+            letter-spacing: 0.3px;
+            margin-bottom: 1.25rem;
+            border-left: 3px solid #dbb042;
+            padding-left: 1rem;
+        }
+
+        .intro-card h2 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #0f1f2f;
+        }
+
+        .intro-card .lead {
+            font-size: 1.15rem;
+            color: #2c3f53;
+            margin-bottom: 1.6rem;
+            border-bottom: 1px solid #e7edf2;
+            padding-bottom: 1rem;
+        }
+
+        .intro-card p {
+            margin-bottom: 1.4rem;
+            font-size: 1rem;
+            color: #1f2d3b;
+        }
+
+        .intro-card .quote-line {
+            background: #f0f4f9;
+            padding: 1rem 1.4rem;
+            border-radius: 14px;
+            margin: 1.8rem 0 1rem;
+            font-style: normal;
+            border-left: 4px solid #dbb042;
+            font-size: 1rem;
+            color: #1d3144;
+        }
+
+        .intro-card .quote-line strong {
+            color: #0f1f2f;
+        }
+
+        .intro-card a {
+            color: #b8862d;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1.5px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .intro-card a:hover {
+            color: #0b1a2e;
+        }
+
+        .faq-mini {
+            background: #ffffff;
+            padding: 2rem 2.2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            margin-bottom: 2.5rem;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #0b1a2e;
+            letter-spacing: -0.01em;
+        }
+
+        .faq-item {
+            margin-bottom: 1.1rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1e2f41;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item span {
+            font-size: 0.95rem;
+            color: #3b4f62;
+            line-height: 1.6;
+        }
+
+        .outro-note {
+            text-align: center;
+            padding: 2rem 1rem 0.5rem;
+            border-top: 1px solid #dce4ea;
+            margin-top: 0.8rem;
+        }
+
+        .outro-note p {
+            font-size: 1rem;
+            color: #2b4157;
+        }
+
+        .outro-note a {
+            color: #b8862d;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: 500;
+        }
+
+        .outro-note a:hover {
+            color: #0b1a2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.8rem 1.5rem;
+            font-size: 0.85rem;
+            color: #6d7e91;
+            border-top: 1px solid #dce4ea;
+            background: #f4f6f8;
+            margin-top: auto;
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .intro-card {
+                padding: 1.8rem 1.3rem;
+            }
+            .faq-mini {
+                padding: 1.5rem 1.3rem;
+            }
+            .intro-card h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 2.8rem 1rem 2.2rem;
+            }
+            .container {
+                padding: 1.8rem 1rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>熊猫体育</h1>
+        <p>从赛事数据到训练场景，一个更清晰的定位窗口</p>
+    </section>
+
+    <div class="container">
+        <article class="intro-card">
+            <div class="meta">导读 · 用户视角</div>
+            <h2>快速识别，而非猜测</h2>
+            <p class="lead">当你第一次进入一个体育类网站，最直接的问题是：这里提供什么？面向谁？值得花时间吗？</p>
+            <p><a href="https://zho-pandasports.com">熊猫体育</a> 是一个聚焦运动内容与信息整合的平台。页面围绕体育赛事、训练方法、装备观察等方向组织内容，力求让访问者用最短的阅读判断出领域与价值。</p>
+            <p>从首页结构来看，信息以卡片、列表、图文混排的方式呈现，视觉层级清晰。没有过度营销化的弹窗或虚假数据，整体风格偏向实用与克制。如果你正在寻找一个以运动信息为核心的站点，这里值得停留几分钟。</p>
+            <div class="quote-line">
+                <strong>引用提示</strong> —— “判断一个体育网站是否适合自己，先看内容分类是否具体，再看更新节奏是否稳定。” 
+            </div>
+            <p>主页的导航与标签设计，让足球、篮球、户外、健身等细分领域一目了然。即使你是第一次访问，也能在 20 秒内建立起大致认知。对于专注体育内容阅读的用户而言，这种低认知成本的体验是有效的。</p>
+        </article>
+
+        <section class="faq-mini">
+            <h3>常见问题摘要 · 用户视角</h3>
+            <div class="faq-item">
+                <strong>这个网站主要覆盖哪些运动？</strong>
+                <span>足球、篮球、跑步、健身、户外等主流领域均有内容，且保持一定更新频率。部分深度文章会涉及训练原理与装备分析。</span>
+            </div>
+            <div class="faq-item">
+                <strong>内容风格偏资讯还是偏深度？</strong>
+                <span>两者兼有。快速浏览可见短讯类条目，同时也有超过 2000 字的专项分析。平台并未将自己限定为单一资讯站。</span>
+            </div>
+            <div class="faq-item">
+                <strong>是否适合运动初学者？</strong>
+                <span>适合。一部分内容面向大众读者，术语有解释，且没有过度推销课程或产品的倾向，信息相对中立。</span>
+            </div>
+        </section>
+
+        <div class="outro-note">
+            <p>如果你希望直接了解平台全貌，可以从 <a href="https://zho-pandasports.com">熊猫体育</a> 首页开始浏览。页面结构直观，分类明确，适合自行探索。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>简洁博客式 · 以识别效率为切入 · 熊猫体育介绍页</p>
+    </footer>
+</body>
+</html>
